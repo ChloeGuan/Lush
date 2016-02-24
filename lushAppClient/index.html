@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="Lush">
+    <head>
+        <base href="/lushApp/lushAppClient/" />
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+        <link rel="stylesheet" href="CSS/font-awesome.min.css" />
+        <script src="JS/jquery-2.1.4.js"></script>
+        <script src="JS/angular.js"></script>
+        <script src="JS/angular-route.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <script src="JS/app.js"></script>
+        <script src="JS/user.js"></script>
+    </head>
+    <body>
+        <h1>LUSH</h1>
+        <div ng-include="'VIEW/Intro.html'" ng-hide="login == true"></div>
+        <div ng-view></div>
+    </body>
+</html>
